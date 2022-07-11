@@ -13,5 +13,5 @@ RUN echo 'cd /noVNC-1.2.0' >>/luo.sh
 RUN echo './utils/launch.sh  --vnc localhost:7900 --listen 80 ' >>/luo.sh
 RUN echo root:laoluoshushu|chpasswd
 RUN chmod 755 /luo.sh
-EXPOSE 80
+# EXPOSE 80
 CMD  /luo.sh
